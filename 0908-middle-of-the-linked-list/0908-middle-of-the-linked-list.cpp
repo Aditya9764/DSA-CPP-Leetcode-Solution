@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-ListNode* middle(ListNode* head)
+ /*ListNode* middle(ListNode* head)
 {
     int len=0 ;
     ListNode* temp = head ;
@@ -28,8 +28,34 @@ ListNode* middle(ListNode* head)
     }
     return head ;
 }
+*/
+   ListNode* rabit_tortoise(ListNode* head)
+   {
+       ListNode* slow = head ;
+       ListNode* fast = head->next ;
+
+       // base case 
+       if(head == NULL || head->next== NULL)
+       {
+           return head ;
+       }
+        else{
+       while(fast!=NULL)
+       {
+           fast= fast->next ;
+           if(fast!= NULL)
+           {
+               fast =fast->next ;
+           }
+           slow= slow->next ;
+       }
+       return slow ;
+        }
+
+   }
+
     ListNode* middleNode(ListNode* head) {
-        return  middle(head) ;
-        
+      //  return  middle(head) ;
+        return rabit_tortoise(head) ;
     }
 };
