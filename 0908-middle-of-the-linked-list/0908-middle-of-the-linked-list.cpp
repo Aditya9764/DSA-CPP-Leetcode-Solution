@@ -40,11 +40,13 @@ public:
            return head ;
        }
         else{
-       while(fast!=NULL)
+       while(fast!=NULL)  //   fast!=NULL  && fast ->next != NULL
+        
        {
            fast= fast->next ;
            if(fast!= NULL)
-           {
+           {                                        // fast=fast->next->next ;
+                                                   // slow= slow->next ;
                fast =fast->next ;
            }
            slow= slow->next ;
