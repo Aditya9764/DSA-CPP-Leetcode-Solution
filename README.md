@@ -15,8 +15,7 @@ You'll find my C++ solutions to a variety of DSA problems sourced from GeeksforG
 
 Feel free to review, optimize, or suggest improvements to the solutions. Let's join forces to crack these challenges and make the coding world better, one solution at a time! 🤝
 
-## 📜 Getting Started
-
+## 📜 Getting Started.
 To use the solutions, simply open the respective C++ files, absorb the logic, and embark on a coding adventure! Your journey to mastering DSA begins here. 🌌
 
 ## 💡 Contributing
